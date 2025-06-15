@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Love Letter Journey</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="particles"></div>
+
+    <div class="game-container" id="gameContainer">
+        <h1 class="game-title">Collect My Love ❤️</h1>
+        <p class="game-instruction">
+            Catch all the floating hearts to unlock my love letter!
+            <br>Each heart contains a piece of my affection for you 💕
+        </p>
+        <div class="heart-counter" id="heartCounter">Hearts Collected: 0/10</div>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="lock-puzzle" id="lockPuzzle">
+            <h3 style="color: #d63384; margin-bottom: 15px;">Enter the secret code (Hint: Our special time) 💖</h3>
+            <div class="love-lock" id="loveLock">
+                <div class="lock-shackle"></div>
+                <div class="keyhole"></div>
+            </div>
+            <div class="combination-input">
+                <input type="number" class="combo-digit" id="digit1" min="0" max="9" placeholder="?">
+                <input type="number" class="combo-digit" id="digit2" min="0" max="9" placeholder="?">
+                <input type="number" class="combo-digit" id="digit3" min="0" max="9" placeholder="?">
+                <input type="number" class="combo-digit" id="digit4" min="0" max="9" placeholder="?">
+            </div>
+            <p style="color: #666; font-style: italic;">Please try again my love 💕</p>
+        </div>
+
+        <div class="wand-section" id="wandSection">
+            <h3 style="color: #d63384; margin-bottom: 15px;">Cast the spell of love! ✨</h3>
+            <div class="magic-wand" id="magicWand">🪄</div>
+            <p style="color: #666;">Click the magic wand 3 times to reveal the letter!</p>
+        </div>
+    </div>
+
+    <div class="main-content" id="mainContent">
+        <div class="letter-paper">
+            <div class="letter-header">
+                <h1 class="letter-title">My Dearest Love</h1>
+                <p style="font-style: italic; color: #888;">Click on special words to reveal hidden messages ✨</p>
+            </div>
+
+           <div class="letter-content">
+    <p class="letter-paragraph">
+        From the moment you walked into my <span class="interactive-word" data-message="You changed everything! 💫">life</span>,
+        everything became <span class="interactive-word" data-message="Like a rainbow after rain! 🌈">brighter</span>.
+        You are the <span class="interactive-word" data-message="My heart sings only for you! 🎵">melody</span>
+        that makes my soul dance, the <span class="interactive-word" data-message="You guide me through darkness! 🕯️">light</span>
+        that guides me through every storm.
+    </p>
+
+    <p class="letter-paragraph">
+        Every morning I wake up <span class="interactive-word" data-message="Grateful beyond words! 🙏">grateful</span>
+        for your love, and every night I fall asleep counting the ways you make me
+        <span class="interactive-word" data-message="You complete my soul! 🧩">whole</span>.
+        Your <span class="interactive-word" data-message="Music to my ears! 🎶">laughter</span>
+        is my favorite song, your <span class="interactive-word" data-message="Lights up my world! ✨">smile</span>
+        my greatest treasure.
+    </p>
+
+    <p class="letter-paragraph">
+        I promise to love you through every <span class="interactive-word" data-message="Spring, Summer, Fall, Winter - Always! 🌸❄️">season</span>
+        of life, to be your shelter in <span class="interactive-word" data-message="I'll protect you always! ⛈️">storms</span>
+        and your companion in <span class="interactive-word" data-message="Our happy days together! ☀️">sunshine</span>.
+        Together, we'll write a love story that will <span class="interactive-word" data-message="Our love is eternal! ♾️">inspire</span>
+        generations.
+    </p>
+
+    <p class="letter-paragraph">
+        You are my <span class="interactive-word" data-message="Right here, right now! 📍">today</span>,
+        my <span class="interactive-word" data-message="All my dreams! 🌙">tomorrow</span>,
+        and my <span class="interactive-word" data-message="Until the end of time! ⏰">forever</span>.
+        To infinity and beyond, my love,
+        I will cherish you, adore you, and love you with all my heart.
+    </p>
+</div>
+
+<div class="signature-section">
+    <div class="signature">With all my love,<br>Your grateful man, Loyd💖</div>
+
+    <div class="final-interaction">
+        <button class="love-button primary" onclick="celebrateLove()">My Love is Yours! 💕</button>
+        <button class="love-button secondary" onclick="sendKiss()">A Kiss for My Queen 😘</button>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <div class="celebration" id="celebration"></div>
+    <script src="animation.js"></script>
+</body>
+</html>
